@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-function App() {
+import DrawingCanvas from './canvasComponent.js'
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <DrawingCanvas
+        width={500}
+        height={500}
+        lineWidth={10}
+        lineColor='darkorange'
+        image=''
+        onChange={(data) => { console.log(data.substring(0, 1000)) }}
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
