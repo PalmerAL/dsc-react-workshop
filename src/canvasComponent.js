@@ -52,6 +52,7 @@ function CanvasComponent (props) {
 
   return (
     <canvas
+      className='drawingCanvas'
       ref={(node) => {
         canvas = node
         insertImage(node)

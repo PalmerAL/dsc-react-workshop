@@ -6,8 +6,8 @@ function App () {
   return (
     <div className='App'>
       <DrawingCanvas
-        width={500}
-        height={500}
+        width={800}
+        height={600}
         lineWidth={10}
         lineColor='darkorange'
         image=''
